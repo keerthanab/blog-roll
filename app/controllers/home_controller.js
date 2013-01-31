@@ -1,6 +1,6 @@
-action('indexPage', function () {
+action('landing', function () {
 	
 	console.log("Hey I am in controller");
-	render('indexPage', {title: 'My Blog'} );
+	render('landing', {title: 'My Blog'} );
 
 });
