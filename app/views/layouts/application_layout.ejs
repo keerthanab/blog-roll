@@ -1,41 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title><%= title %></title>
-        <%- stylesheet_link_tag('bootstrap', 'style', 'bootstrap-responsive') %>
-        <%- javascript_include_tag('http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js', 'bootstrap', 'rails', 'application') %>
-        <%- csrf_meta_tag() %>
-    </head>
-    <body>
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="brand" href="#">Project name</a>
-                </div>
-            </div>
-        </div>
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+<meta charset="utf-8">   
+<title><%= title %></title>   
+<meta name="description" content="Bla bla bla">  
+<link href="../twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+<link href="../twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">  
 
-        <div class="container">
-            <% var flash = request.flash('info').pop(); if (flash) { %>
-                <div class="alert alert-info">
-                    <a class="close" data-dismiss="alert">×</a>
-                    <%- flash %>
-                </div>
-            <% } %>
+<script src="../twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
 
-            <% flash = request.flash('error').pop(); if (flash) { %>
-                <div class="alert alert-error">
-                    <a class="close" data-dismiss="alert">×</a>
-                    <%- flash %>
-                </div>
-            <% }; %>
+<style type="text/css">
 
-            <%- body %>
+  body { padding-top: 40px; } 
 
-            <hr />
-            <footer>
-                <p>&copy; Company 2012</p>
-            </footer>
-        </div>
-    </body>
-</html>
+  img.bg {
+    /* Set rules to fill background */
+    min-height: 768px;
+    min-width: 1024px;
+    max-width: 30%;
+    max-height: 100%;
+  
+  /* Set up proportionate scaling */
+  height:auto;
+  top:5%;
+  left:-2%;
+    
+  /* Set up positioning */
+  position: absolute;
+  z-index: 0;
+
+
+}
+
+img.mybg {
+    /* Set rules to fill background */
+    min-height: 250px;
+    min-width: 250px;
+    max-width: 30%;
+ 
+  
+  /* Set up proportionate scaling */
+  height:20%;
+  top:12%;
+
+  
+  /* Set up positioning */
+  position: absolute;
+  z-index: 0;
+
+
+}
+
+</style>
+
+</head>  
+<body>
+
+
+
+<div class="container-fluid">  
+  <div class="row-fluid"> 
+    <div class="span9" style="float:left;">  
+      <!--Sidebar content--> 
+      <a class="film-roll" href="articles"> <img src="/images/blog-roll.png" class="bg" alt=""> </img> </a> 
+    </div>  
+
+    <div class="span3" style="float:right;">  
+      <h1>Life rolls...</h1>
+        <img src="/images/person-placeholder.jpg" class="mybg" alt=""> </img> 
+    </div>  
+  </div>  
+</div>  
+       
+
+
+<%- body %>
+ 
+
+
+</body>  
+</html>   
+           
