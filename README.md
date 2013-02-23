@@ -1,1 +1,1 @@
-## Welcome to CompoundJS
+## Rolling out a blog exercise using Compound Node and Mongoose
