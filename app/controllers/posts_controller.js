@@ -1,6 +1,6 @@
-action('landing', function () {
+action('profile', function () {
 	
 	console.log("Hey I am in home controller");
-	render('landing', {title: 'Venkat'} );
+	render(index, {title: 'Venkat'} );
 
 });
