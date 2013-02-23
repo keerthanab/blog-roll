@@ -5,6 +5,11 @@ exports.routes = function (map) {
     // map.all(':controller/:action');
     //map.all(':controller/:action/:id');
 
-    map.root('home#landing');
+    map.namespace('admin', function (admin) {
+    	// admin.resources('users'); // this is if you choose to have another folder inside this admin folder
+	});
+
+
+	map.root('admin/posts#profile');    
     map.get('/post-articles','articles#posts');
 };
