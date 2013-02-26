@@ -1,1 +1,8 @@
-## Rolling out a blog exercise using Compound Node and Mongoose
+
+
+=======
+blog-roll
+=========
+
+A blogging exercise using Compound Node and Mongoose
+
