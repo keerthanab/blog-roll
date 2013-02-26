@@ -7,9 +7,10 @@ exports.routes = function (map) {
 
     map.namespace('admin', function (admin) {
     	// admin.resources('users'); // this is if you choose to have another folder inside this admin folder
+    	
 	});
 
-
-	map.root('admin/posts#profile');    
+	map.get('/venkat', 'admin/posts#profile'); 
+	map.root('posts#landing');  
     map.get('/post-articles','articles#posts');
 };

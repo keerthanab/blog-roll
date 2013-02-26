@@ -1,0 +1,100 @@
+<!DOCTYPE html>   
+<html lang="en">   
+<head>   
+<meta charset="utf-8">   
+<title><%= title %></title>   
+<meta name="description" content="Bla bla bla">  
+<link href="../twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+<link href="../twitter-bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">  
+
+<script src="../twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+
+<style type="text/css">
+
+  body { padding-top: 40px; } 
+
+  img.bg {
+    /* Set rules to fill background */
+    min-height: 768px;
+    min-width: 1024px;
+    max-width: 30%;
+    max-height: 100%;
+  
+  /* Set up proportionate scaling */
+  height:auto;
+  top:5%;
+  left:-2%;
+    
+  /* Set up positioning */
+  position: absolute;
+  z-index: 0;
+
+
+}
+
+img.mybg {
+    /* Set rules to fill background */
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 30%;
+ 
+  
+  /* Set up proportionate scaling */
+  height:20%;
+  top:12%;
+
+  
+  /* Set up positioning */
+  position: absolute;
+  z-index: 0;
+
+
+}
+
+</style>
+
+</head>  
+<body>
+
+
+<div class="container-fluid">  
+  <div class="row-fluid"> 
+ 
+    <div class="span8" style="float:left;">  
+      simple_form_for(@article, :html => { :class => 'form-horizontal' }) do |f|
+        f.input :name, :input_html => { :class => "span6" }, :hint => "add your article title here"
+        f.input :name, :wrapper => :prepend, :label => false do
+          content_tag :span, "Name", :class => "add-on"
+          f.input_field :name
+        end
+      end
+      <p>மறந்துவிடாதே </br> </br> </br>
+      நான் கருவில் உருவான போதே கலைக்க மறந்த நீ </br> 
+      நான் பிறந்ததும் கள்ளிப்பால் கொடுக்கவும் மறந்துவிட்டாய். </br> </br> </br>
+      நான் உன் வயிற்றில் இருந்த போது உதைத்தேன் என்பதற்காகவா என்னை இந்த நரகத்தில் தனியே விட்டு வதைக்கிறாய்? </br> </br> </br>
+      நீ முத்தமிட்ட எச்சில் கூடக் காயவில்லை அதற்குள் எங்கு சென்றாய் என்னை இந்த குப்பைத் தொட்டியில் எறிந்து விட்டு?</br> </br> </br>
+      ஆனால் பாரதி கண்ட புதுமைப் பெண் நீதானோ?</br> 
+      அனாதை என்றொரு ஜாதியையே எனக்காக உருவாக்கிவிட்டாய்!!!</br> </br> </br>
+      உன் தொப்புள் கொடியை அறுத்த நீ உன் கருவறையையும் அறுத்தெறிய மறந்துவிடாதே.</br> </br> </br>
+      காரணம்...</br> </br> </br>
+      வேண்டாம் அதில் இன்னொரு அனாதையின்</br>
+      "ஜனனம்" !!  </br> </br></br></p>
+
+    </div>   
+
+    <div class="span4" style="float:right;">  
+      <img src="/images/clapper-board.png" class="mybg" alt=""> </img> 
+    </div> 
+  </div>  
+</div>  
+       
+
+
+<%- body %>
+ 
+
+
+</body>  
+</html>   
+           
